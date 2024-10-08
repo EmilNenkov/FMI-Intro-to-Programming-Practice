@@ -2,12 +2,8 @@
 
 int main()
 {
-    char id[11];
+    long long int id;
     std::cin >> id;
 
-    std::cout << "*******";
-
-    for (int i = 7; i < 10; i++) {
-        std::cout << id[i];
-    }
+    std::cout << "*******" << (id % 1000);
 }
