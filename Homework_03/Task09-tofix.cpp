@@ -6,8 +6,8 @@ int main()
 	std::cin >> day >> month >> year; 
 	
 	if (month == 1 || month == 2) {
-        month += 12;
-        year -= 1;
+            month += 12;
+            year -= 1;
     }
 	
 	int zero_based_century, year_of_century;
