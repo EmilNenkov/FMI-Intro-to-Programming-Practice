@@ -12,5 +12,5 @@ int main()
 			break;
 		}
 	}
-	(is_prime) ? std::cout << "prime" : std::cout << "not prime";
+	std::cout << (is_prime ? "prime" : "not prime");
 }
