@@ -5,7 +5,7 @@ int main()
     int n, next;
     std::cin >> n;
     
-    std::cout << ((n == 0) ? '0' : '1') << ' ';
+    std::cout << (n == 0 ? '0' : '1') << ' ';
     
     int prev = 1;
     int curr = 2;
