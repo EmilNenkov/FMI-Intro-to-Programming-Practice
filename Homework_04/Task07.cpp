@@ -2,7 +2,7 @@
 
 int main() {
     int n;
-    bool is_prime = false;
+    bool is_prime;
     std::cin >> n;
 
     for (int i = 100; i <= n; i++) {
