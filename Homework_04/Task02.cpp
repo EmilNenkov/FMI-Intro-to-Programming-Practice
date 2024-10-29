@@ -11,7 +11,7 @@ int main()
 		std::cin >> num;
 
 		if (num % 2 == 0) {
-			(!res) ? res = true : res;
+			!res ? res = true : res;
 			std::cout << num;
 		}
 	}
