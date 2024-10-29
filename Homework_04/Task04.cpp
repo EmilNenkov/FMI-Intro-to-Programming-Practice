@@ -13,9 +13,7 @@ int main() {
         temp = num;
         
         while (temp) {
-            if (temp % 10 == curr) {
-                counter++;
-            }
+            temp % 10 == curr ? counter++ : temp;
             temp /= 10;
         }
         if (counter > most_appearances) {
