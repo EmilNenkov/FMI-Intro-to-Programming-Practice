@@ -13,8 +13,8 @@ int main()
 		std::cin >> num;
 		average_sum += num;
 		
-		(num > highest_num) ? highest_num = num : highest_num;
-		(num < lowest_num) ? lowest_num = num : lowest_num;
+		num > highest_num ? highest_num = num : highest_num;
+		num < lowest_num ? lowest_num = num : lowest_num;
 	}
 
 	double average = average_sum / n;
