@@ -1,15 +1,11 @@
 #include <iostream>
 
-int sum_divisors(int num) {
+bool is_perfect(int num) {
     int sum = 0;
     for (int i = 1; i < num; i++) {
         num % i == 0 ? sum += i : num;
     }
-    return sum;
-}
-
-bool is_perfect(int num) {
-    return sum_divisors(num) == num;
+    return num != 0 ? sum == num : false;
 }
 
 int main() {
