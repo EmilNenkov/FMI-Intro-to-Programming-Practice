@@ -2,7 +2,6 @@
 
 int countOccurrences(int num, int digit) {
     int counter = 0;
-
     while (num) {
         if (num % 10 == digit) {
             counter++;
@@ -15,7 +14,6 @@ int countOccurrences(int num, int digit) {
 
 int countDigits(int num) {
     int counter = 0;
-
     while (num) {
         counter++;
         num /= 10;
@@ -26,7 +24,6 @@ int countDigits(int num) {
 
 int modifyNum(int num, int digits, int expansion) {
     int digit = num;
-
     for (int i = 0; i < digits; i++) {
         num *= 10;
         num += digit;
@@ -44,7 +41,6 @@ void expandNum(int& res, int digit, int count) {
 int sortNumDescOrd(int num) {
     int res = 0;  
     int digit_count = countDigits(num); 
-
     for (int i = 9; i >= 0; i--) { 
         int count_occuences = countOccurrences(num, i); 
         if (count_occuences > 0) {
