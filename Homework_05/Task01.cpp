@@ -1,7 +1,8 @@
 #include <iostream>
+#include <cmath>
 
-bool isDigit(char num) {
-    return '0' <= num && num <= '9';
+bool isDigit(char symbol) {
+    return '0' <= symbol && symbol <= '9';
 }
 
 bool isUpper(char symbol) {
@@ -36,12 +37,18 @@ char toChar(int symbol) {
     return 0 <= symbol && symbol <= 9 ? symbol : '\0';
 }
 
-int myLog(int symbol) {
-
+ int myLog(int symbol) {
+    return log(symbol);
 }
 
-int myPow(int symbol) {
+int myPow(int num, int power) {
+    int res = num;
 
+    for (int i = 1; i < power; i++) {
+        res *= num;
+    }
+
+    return res;
 }
 
 int myCeil(double symbol) {
@@ -53,12 +60,10 @@ int myFloor(double symbol) {
 }
 
 int myAbs(double symbol) {
-    return std::fabs(symbol);
+    return fabs(symbol);
 }
 
 int main()
 {
-    std::cout << makeLower('H');
+    
 }
-
-
