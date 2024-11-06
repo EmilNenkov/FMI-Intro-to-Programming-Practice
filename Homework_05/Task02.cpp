@@ -1,11 +1,11 @@
 #include <iostream>
 
-bool check_sum(int num) {
+bool checkSum(int num) {
     return (num % 10 + (num / 10) % 10 + (num / 100) % 10) < 10;
 }
 
-bool check_prime(int num) {
-    for (int i = 2; i < num; i++) {
+bool checkPrime(int num) {
+    for (int i = 2; i < num / 2; i++) {
         if (num % i == 0) {
             return false;
         }
@@ -13,10 +13,10 @@ bool check_prime(int num) {
     return true;
 }
 
-void get_result(int num) {
+void getResult(int num) {
     for (int i = 101; i <= num; i++) {
-        if (check_sum(i) && check_prime(i)) {
-                std::cout << i << ' ';
+        if (checkSum(i) && checkPrime(i)) {
+            std::cout << i << ' ';
         }
     }
 }
@@ -24,5 +24,5 @@ void get_result(int num) {
 int main() {
     int num;
     std::cin >> num;
-    get_result(num);
+    getResult(num);
 }
