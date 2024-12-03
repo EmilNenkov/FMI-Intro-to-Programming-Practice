@@ -6,7 +6,6 @@ void inputArr (int rows_count, int cols_count, int arr[][SIZE]);
 void printArr (int rows_count, int cols_count, int arr[][SIZE]);
 
 int main() {
-    
     int rows_count, cols_count;
     std::cin >> rows_count >> cols_count;
     int arr[SIZE][SIZE];
