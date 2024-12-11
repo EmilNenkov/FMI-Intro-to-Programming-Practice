@@ -1,8 +1,14 @@
 #include <iostream>
 
+void printStr(const char str[]);
+void toUpper(char str[]);
+void toLower(char str[]);
+
 int main()
 {
     char str[] = "CPPExample";
+    toUpper(str);
+    printStr(str);
 }
 
 void printStr(const char str[]) {
@@ -27,7 +33,6 @@ void toLower(char str[]) {
         if (*str >= 'A' && *str <= 'Z') {
             *str += 'a' - 'A';
         }
-        std::cout << *str;
         str++;
     }
 }
